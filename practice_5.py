@@ -1,4 +1,4 @@
-#计算一个若干个数的积
+#计算若干个数的积
 def product(*numbers):
     if not numbers:
         
@@ -8,5 +8,5 @@ def product(*numbers):
         pro=pro*i
     
     return pro
-print(product(*map(int,input('请输入数值，用空格隔开').split())))
+print(product(*map(int,input('请输入数值，用空格隔开:').split())))
 
