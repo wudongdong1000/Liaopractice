@@ -9,4 +9,4 @@ def findMinAndMax(s):
         if i<min:
             min=i
     return max,min
-print(findMinAndMax([2,3,-1,9,19,2]))
+print(findMinAndMax([2,3,-1,2,9,19,2]))
