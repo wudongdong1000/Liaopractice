@@ -17,3 +17,25 @@ def triangles():
 p=triangles()       
 for i in range(15):
     print(next(p))
+'''别人更容易理解的方法
+def triangles():
+    max=0
+    last=[]
+    while max<=10:
+        l=[]
+        if last==[]:
+            l=[1]
+        else:
+            for i in range(0,max+1):
+                if i==0 or i==max:
+                    l.append(1)
+                else:
+                    l.append(last[i-1]+last[i])
+
+        yield l
+        last=l
+        max+=1
+q=triangles()
+for i in range(10):
+    print(next(q))
+'''
