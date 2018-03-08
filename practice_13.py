@@ -13,7 +13,6 @@ def normalize(name):
         s[0]=chr(ord(s[0])-32)
         s=''.join(s)
         return s
-        
     return map(capitalize,name)
 print(list(normalize(['adam', 'LISA', 'barT'])))
     
