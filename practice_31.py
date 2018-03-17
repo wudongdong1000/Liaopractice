@@ -12,6 +12,5 @@ def student2dict(self):
             'score':self.score
         }
 s=Student('Bob',20,88)
-eval()
 print(type(json.dumps(s,default=student2dict)))
 print(json.dumps(s,default=student2dict))
