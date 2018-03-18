@@ -1,3 +1,5 @@
+#OrderedDict 可以实现一个FIFO(先进先出)
+
 from collections import OrderedDict
 class LastUpdatedOrderedDict(OrderedDict):
     def __init__(self,capacity):
