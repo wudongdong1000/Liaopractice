@@ -7,7 +7,7 @@ class LastUpdatedOrderedDict(OrderedDict):
         self._capacity=capacity
     def __setitem__(self,key,value):
         containsKey = 1 if key in self else 0
-        if len(self) - containsKey>=self._capacity:
+        if len(self) - containsKey==self._capacity:
             last=self.popitem(last=False)
             print('remove:',last)
         if containsKey:
@@ -20,5 +20,7 @@ class LastUpdatedOrderedDict(OrderedDict):
 s=LastUpdatedOrderedDict(2)
 s['a']=1
 s['b']=2
-s['a']=3
+s['a']=4
+
+
 
